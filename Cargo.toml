@@ -71,7 +71,6 @@ uart = ["drone-stm32-map-periph-uart"]
 
 [dependencies.drone-cortex-m]
 version = "0.11.0"
-path = "../drone-cortex-m"
 
 [dependencies.drone-stm32-map-pieces]
 version = "=0.11.0"

@@ -13,7 +13,6 @@ STM32 SVD to bindings for Drone, an Embedded Operating System.
 
 [dependencies.drone-svd]
 version = "0.11.0"
-path = "../../drone-svd"
 
 [dependencies]
 anyhow = "1"
