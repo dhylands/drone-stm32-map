@@ -115,6 +115,7 @@ fn patch_stm32f401(mut dev: Device) -> Result<Device> {
 }
 
 fn patch_stm32f405(mut dev: Device) -> Result<Device> {
+    rcc::fix_2(&mut dev)?;
     rcc::fix_3(&mut dev)?;
     dma::fix_dma2_1(&mut dev)?;
     dma::fix_dma2_2(&mut dev)?;
@@ -134,6 +135,7 @@ fn patch_stm32f405(mut dev: Device) -> Result<Device> {
 }
 
 fn patch_stm32f407(mut dev: Device) -> Result<Device> {
+    rcc::fix_2(&mut dev)?;
     rcc::fix_3(&mut dev)?;
     dma::fix_dma2_1(&mut dev)?;
     dma::fix_dma2_2(&mut dev)?;
@@ -153,6 +155,7 @@ fn patch_stm32f407(mut dev: Device) -> Result<Device> {
 }
 
 fn patch_stm32f410(mut dev: Device) -> Result<Device> {
+    rcc::fix_2(&mut dev)?;
     dma::fix_dma2_1(&mut dev)?;
     tim::fix_tim1_1(&mut dev)?;
     tim::fix_tim5_1(&mut dev)?;
@@ -164,6 +167,7 @@ fn patch_stm32f410(mut dev: Device) -> Result<Device> {
 }
 
 fn patch_stm32f411(mut dev: Device) -> Result<Device> {
+    rcc::fix_2(&mut dev)?;
     dma::fix_dma2_1(&mut dev)?;
     tim::fix_tim1_1(&mut dev)?;
     tim::fix_tim2_2(&mut dev)?;
@@ -180,6 +184,7 @@ fn patch_stm32f411(mut dev: Device) -> Result<Device> {
 }
 
 fn patch_stm32f412(mut dev: Device) -> Result<Device> {
+    rcc::fix_2(&mut dev)?;
     dma::fix_dma2_1(&mut dev)?;
     tim::fix_tim1_1(&mut dev)?;
     tim::fix_tim2_2(&mut dev)?;
@@ -195,6 +200,7 @@ fn patch_stm32f412(mut dev: Device) -> Result<Device> {
 }
 
 fn patch_stm32f413(mut dev: Device) -> Result<Device> {
+    rcc::fix_2(&mut dev)?;
     dma::fix_dma1(&mut dev)?;
     exti::fix_exti_2(&mut dev)?;
     tim::fix_tim1_1(&mut dev)?;
@@ -211,6 +217,7 @@ fn patch_stm32f413(mut dev: Device) -> Result<Device> {
 }
 
 fn patch_stm32f427(mut dev: Device) -> Result<Device> {
+    rcc::fix_2(&mut dev)?;
     rcc::fix_3(&mut dev)?;
     dma::fix_dma2_1(&mut dev)?;
     dma::fix_dma2_2(&mut dev)?;
@@ -230,6 +237,7 @@ fn patch_stm32f427(mut dev: Device) -> Result<Device> {
 }
 
 fn patch_stm32f429(mut dev: Device) -> Result<Device> {
+    rcc::fix_2(&mut dev)?;
     rcc::fix_3(&mut dev)?;
     dma::fix_dma2_1(&mut dev)?;
     dma::fix_dma2_2(&mut dev)?;
@@ -249,6 +257,7 @@ fn patch_stm32f429(mut dev: Device) -> Result<Device> {
 }
 
 fn patch_stm32f446(mut dev: Device) -> Result<Device> {
+    rcc::fix_2(&mut dev)?;
     dma::fix_dma2_1(&mut dev)?;
     dma::fix_dma2_2(&mut dev)?;
     tim::fix_tim1_1(&mut dev)?;
